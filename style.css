@@ -1,55 +1,136 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  margin:30px 120px;
+}
+h1{
+  font-weight: 700;
+    font-size: 52px; 
+}
 
-
+/*........... nav sarted.............................. */
+nav{
+  display:flex;
+  align-items: center;
+}
+nav ul{
+  display:flex;
+}
+nav ul li{
+  list-style: none;
+  margin-left:30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.left{
+  font-weight: bold;
+  font-size:24px;
+  
+}
+.right{
+  font-size:16px;
+  font-weight:600;
+  margin-left:300px;
+}
+/* ...........top part........... */
 .section1{
   display: flex;
 }
-h3{
-  padding-left: 20px;
-}
 .top-part{
-  padding-left:20px;
+  width:50%;
+  margin-left:0px;
 }
-
-.link-button{
+.camera{
+  width:50%;
+}
+.button a{
   text-decoration: none;
-  color:white;
-  font-weight: 400;
-}
-.button{
   background-color: tomato;
-  padding:12px;
-  width:110px;
-  color:white;
-  border-radius: 40px;
+  width:15%;
+  padding: 10px 10px;
+ border-radius: 10px;
+ color:white; 
 }
-/* section2........ */
-.brand img{
-  width:5%;
-  padding: 50px;
- 
+/* .........top part end ......*/
+/* section2....brand ...name.... */
+hr{
+  border:0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
 }
-/* popular collection */
+.section2 > .brand{
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+}
+/* ............popular collection............... */
+.section-tittle h2{
+text-align: center;
+}
 .section3 {
   display:grid;
- grid-template-columns: repeat(3,3fr);
+ grid-template-columns: repeat(3,1fr);
+ grid-column-gap:30px ;
 }
-.section3 img{
-  width:60%;
-  padding:10px;
+.section-tittle{
+  align-items: center;
 }
-/* section4..... */
+.popular-product{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: #d9d9d9 0px 0px 40px;
+}
+.product{
+  padding:15px;
+}
+.products .images img{
+width:100%;
+height: 250px;
+border-radius:5px;
+} 
+ 
+.filled{
+color:orange;
+}
+.emty{
+  color:orange;
+  font-size: 12px;
+}
+.fa-star{
+  font-size: 12px;
+}
+.font-style{
+  font-size:medium;
+  padding-left: 10px;
+}
+.product-details{
+  font-size: bold;
+  font-weight: 700;
+  width:100%;
+}
+.paragraph{
+  color:royalblue;
+}
+
+  
+/* ................section4..... */
 .section4{
   display:flex;
-
+ 
 }
 .section4-info{
  width:50%;
- padding-left: 20px;
- height:10px;
+}
+.photo{
+  width:50%;
+  padding-top: 40px;
+  height: 30%;
 }
 .button3{
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   color:white;
   padding-left: 10px;
  
@@ -60,9 +141,12 @@ h3{
   width:110px;
   color:white;
 }
-.last{
+/* ........footer part..... */
+.last {
   text-align: center;
-  background-color:black;
+  background-color:navy;
   color:white;
   font-weight: 700;
+
+
 }
